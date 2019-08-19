@@ -4,30 +4,30 @@
 module.exports = {
     // blog mate
     blogMeta: {
-        name: 'Mayne', // copyright 显示
-        title: `Mayne's Blog`, //网站标题
-        pageSize: 3, // 每页多少篇文章
-        description: `All things about Mayne`, // 网站描述 seo
-        siteUrl: `https://gine.me`, // 站点URL
+        name: 'Johnson Fly', // copyright 显示
+        title: `Fly's Blog`, //网站标题
+        pageSize: 20, // 每页多少篇文章
+        description: `All things about Johnson Fly`, // 网站描述 seo
+        siteUrl: `http://blog.flyis.me`, // 站点URL
         aboutPostSlug: `10a70927d25a43d19acf14e0d36354e7`, //没有单独的about页面，about页面指向文章。
         avatar: '41546411364_.pic.jpg', // src/static 目录下
         // 社交帐号配置，显示在页面最下方。
         me: {
-            github: 'mayneyao' // github 用户名称
+            github: 'leo424y' // github 用户名称
         }
     },
 
     // 博客数据源 目前只适配notion
     blog: {
         sourceType: 'notion',
-        url: 'https://www.notion.so/99623ef9630940cdb8524ba355831677?v=8366741ca7dd4b339c19484712e13563', // notion中文章表的链接
+        url: 'https://www.notion.so/85611d66df934cdeb74fa27a8ada52be?v=6aaed37a0c3d46b89cdce416c41a7c3f', // notion中文章表的链接
         // 建议开启，可以大大提高build速度
         // 访问 https://github.com/settings/tokens 获取token 
         // export GitHubToken='yourtokenhere'
         openGithubCache: false, // 开启此配置后，notion页面的数据会缓存到github仓库。需要在环境变量中配置 GitHubToken
         github: {
-            username: 'mayneyao', // github 用户名
-            repo: 'blog', // 作为blog缓存数据仓库的名称
+            username: 'leo424y', // github 用户名
+            repo: 'fly-blog-cache', // 作为blog缓存数据仓库的名称
             branch: 'master' // 作为blog缓存数据仓库的分支
         },
         search: {
@@ -39,7 +39,7 @@ module.exports = {
     // 友链
     friendLink: {
         sourceType: 'notion',
-        url: 'https://www.notion.so/71d6656af07e418a92b3fe966a4ba087?v=1329463e9dfe45899caf28d317b84d50', // notion中友链表的链接
+        url: 'https://www.notion.so/e6d23143fea345c6a4441cdece13ce45?v=c1cce088c93d4e6490a843bc2f05bbf4', // notion中友链表的链接
     },
 
     // 下面的是可选组件
@@ -48,7 +48,7 @@ module.exports = {
         open: false, //默认关闭，仅适配disqus
         sourceType: 'disqus',
         disqus: {
-            disqusShortname: 'maynes-blog' // 你的短域名
+            disqusShortname: 'flys-blog' // 你的短域名
         }
     },
 
@@ -111,8 +111,8 @@ module.exports = {
     },
     // Google Analytics
     ga: {
-        open: false, // 默认关闭
-        trackingId: 'UA-xxxxxxxx-x', // ga 分配的追踪代码
+        open: true, // 默认关闭
+        trackingId: 'UA-145574428-1', // ga 分配的追踪代码
     },
     // google_ad_client
     google_ad_client: {
@@ -125,8 +125,8 @@ module.exports = {
 
         // 配置参见 gatsby-plugin-manifest 插件文档
         conf: {
-            name: `Mayne's Blog`,
-            short_name: `Mayne's Blog`,
+            name: `Fly's Blog`,
+            short_name: `Fly's Blog`,
             start_url: `/`,
             background_color: `#ffffff`,
             theme_color: `#ffffff`,
@@ -135,7 +135,7 @@ module.exports = {
         }
     },
     rss: {
-        open: false, //默认关闭
+        open: true, //默认关闭
         // 配置参见 gatsby-plugin-feed 插件文档
         conf: {
             query: `
@@ -180,7 +180,7 @@ module.exports = {
                     }
                   `,
                     output: "/feed",
-                    title: "GiNE RSS Feed",
+                    title: "Fly's RSS Feed",
                 },
             ],
         },
